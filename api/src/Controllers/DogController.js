@@ -55,14 +55,14 @@ const postDogs = async (req, res) => {// lo que requiere el body
       } else {
         const newDog = await Dog.create({ 
               name: name,
-              heightMin: parseInt(heightMin),
-              heightMax: parseInt(heightMax),
-              weightMin: parseInt(weightMin),
-              weightMax: parseInt(weightMax),
-              life_spanMax: parseInt(life_spanMax),
-              life_spanMin: parseInt(life_spanMin),
+              heightMin,//: parseInt(heightMin),
+              heightMax,//: parseInt(heightMax),
+              weightMin,//: parseInt(weightMin),
+              weightMax,//: parseInt(weightMax),
+              life_spanMax,//: parseInt(life_spanMax),
+              life_spanMin,//: parseInt(life_spanMin),
               createdInBd: true,
-              image: image //|| "https://www.dogbreedslist.info/uploads/dog-pictures/beagle-2.jpg",
+              image: image || "https://www.dogbreedslist.info/uploads/dog-pictures/beagle-2.jpg",
           })
           .then(async (dog) => {
               // Guardo el temperamento
@@ -75,17 +75,7 @@ const postDogs = async (req, res) => {// lo que requiere el body
               res.status(201).json(dog);      // 201 porque se creo
           }).catch(err => err)
 
-           res.status(201).json({               
-              // name,
-              // heightMin,
-              // heightMax,
-              // weightMin,
-              // weightMax,
-              // life_spanMax,
-              // life_spanMin,
-              // image
-              newDog
-           });
+           res.status(201).json(newDog);
       }
 };
 
