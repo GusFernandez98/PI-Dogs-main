@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+.inicio{
+    background-image: url('../../Img/Perritos.jpg');
+    margin: 0;
+    padding: 0;
+    display:flow-root;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .titulo{
+    color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Pacifico';
+    font-weight: 800;
+  }
+
+  .bt{
+    cursor: pointer;
+    color: white;
+    list-style: none;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(245, 245, 245);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgba(152, 151, 151, 0.34);
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+  }
+   
